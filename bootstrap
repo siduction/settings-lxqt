@@ -2,7 +2,7 @@
 set -e
 
 
-. templates/functions.sh
+source ./functions.sh
 
 source_version_info
 debian_changelog
@@ -12,49 +12,71 @@ debian_foo_basics
 basic_control lxqt
 debian_rules
 
-# lxqt
-# ====
-[ -d lxqt ] && rm -r lxqt
-cp -a templates/lxqt .
+# debian
+
+sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
+    -e "s/\@FLAVOUR\@/${FLAVOUR}/g" \
+    ./debtemplate/copyright \
+    > ./debian/copyright
 
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
     -e "s/\@DISPLAY\@/${DISPLAY}/g" \
-    templates/debian/lxqt-livesettings.lintian-overrides \
-    > debian/${CODENAME_SAFE}-lxqt-livesettings.lintian-overrides
-sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
-    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
-    templates/debian/lxqt-livesettings.preinst \
-    > debian/${CODENAME_SAFE}-lxqt-livesettings.preinst
-sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
-    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
-    templates/debian/lxqt-livesettings.install \
-    > debian/${CODENAME_SAFE}-lxqt-livesettings.install
-sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
-    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
-    templates/debian/lxqt-livesettings.service \
-    > debian/${CODENAME_SAFE}-lxqt-livesettings.service
+    ./debtemplate/get-template \
+    > ./debian/get-template
+chmod 755 ./debian/get-template
+
 
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
     -e "s/\@DISPLAY\@/${DISPLAY}/g" \
-    templates/debian/lxqt-settings.install \
-    > debian/${CODENAME_SAFE}-lxqt-settings.install
-sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
-    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
-    templates/debian/lxqt-settings.postinst \
-    > debian/${CODENAME_SAFE}-lxqt-settings.postinst
-sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
-    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
-    templates/debian/lxqt-livesettings.postinst \
-    > debian/${CODENAME_SAFE}-lxqt-livesettings.postinst
+    ./debtemplate/settings.install \
+    > ./debian/${CODENAME_SAFE}-lxqt-settings.install
 
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
     -e "s/\@DISPLAY\@/${DISPLAY}/g" \
-    templates/lxqt/etc/xdg/pcmanfm-qt/lxqt/settings.conf \
-    > lxqt/etc/xdg/pcmanfm-qt/lxqt/settings.conf
+    ./debtemplate/settings.postinst \
+    > ./debian/${CODENAME_SAFE}-lxqt-settings.postinst
+
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
     -e "s/\@DISPLAY\@/${DISPLAY}/g" \
-    templates/lxqt/etc/xdg/lxqt/lxqt.conf \
-    > lxqt/etc/xdg/lxqt/lxqt.conf
+    ./debtemplate/livesettings.install \
+    > ./debian/${CODENAME_SAFE}-lxqt-livesettings.install
+
+sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
+    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
+    ./debtemplate/livesettings.lintian-overrides \
+    > ./debian/${CODENAME_SAFE}-lxqt-livesettings.lintian-overrides
+
+sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
+    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
+    ./debtemplate/livesettings.preinst \
+    > ./debian/${CODENAME_SAFE}-lxqt-livesettings.preinst
+
+sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
+    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
+    ./debtemplate/livesettings.postinst \
+    > ./debian/${CODENAME_SAFE}-lxqt-livesettings.postinst
+
+sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
+    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
+    ./debtemplate/livesettings.service \
+    > ./debian/${CODENAME_SAFE}-lxqt-livesettings.service
+
+
+## templating
+
+[ -d ./etc ] && rm -rf ./etc
+cp -a template/* .
+
+
+sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
+    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
+    ./template/etc/xdg/pcmanfm-qt/lxqt/settings.conf \
+    > ./etc/xdg/pcmanfm-qt/lxqt/settings.conf
+
+sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
+    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
+    ./template/etc/xdg/lxqt/lxqt.conf \
+    > ./etc/xdg/lxqt/lxqt.conf
 
 
 grub_template lxqt
