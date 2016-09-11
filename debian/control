@@ -1,4 +1,4 @@
-Source: paintitblack-lxqt-settings
+Source: patience-lxqt-settings
 Section: misc
 Priority: optional
 Maintainer: Alf Gaida <agaida@siduction.org>
@@ -7,14 +7,15 @@ Uploaders: Torsten Wohlfarth <towo@siduction.org>,
 Build-Depends: debhelper (>= 9),
                dh-systemd
 Standards-Version: 3.9.8
-Homepage: http://bugs.siduction.org/projects/siduction-settings
-Vcs-Git: git://git.siduction.org/code/siduction-settings.git
-Vcs-Browser: http://git.siduction.org/?p=code/siduction-settings.git;a=summary
+Homepage: https://git.siduction.org/extra/settings-lxqt
+Vcs-Git: https://git.siduction.org/extra/settings-lxqt.git
+Vcs-Browser: https://git.siduction.org/extra/settings-lxqt.git
 
-Package: paintitblack-lxqt-settings
+# lxqt Settings
+Package: patience-lxqt-settings
 Architecture: all
 Depends: ${misc:Depends},
-         paintitblack-common-settings
+         patience-common-settings
 Description: LXQt settings in installed mode
  Provides default settings for appearance and applications of the LXQt
  desktop.
@@ -23,18 +24,18 @@ Description: LXQt settings in installed mode
  configurable by the local user and don't override already existing user
  profiles.
 
-Package: paintitblack-lxqt-livesettings
+Package: patience-lxqt-livesettings
 Architecture: all
 Depends: ${misc:Depends},
          sidu-installer (>= 2014.01.10),
          siduction-icons,
          xfwm4 | openbox | x-window-manager,
-         paintitblack-lxqt-artwork,
-         paintitblack-lxqt-settings,
-         paintitblack-common-livesettings,
-         paintitblack-sddm-livesettings
-         | paintitblack-ligthdm-gtk-livesettings
-         | paintitblack-gdm3-livesettings
+         patience-lxqt-artwork,
+         patience-lxqt-settings,
+         patience-common-livesettings,
+         patience-sddm-livesettings
+         | patience-ligthdm-gtk-livesettings
+         | patience-gdm3-livesettings
 Description: LXQt settings in live mode
  Provides default settings for appearance and applications of the LXQt
  desktop in live mode.
