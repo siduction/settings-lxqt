@@ -1,3 +1,9 @@
+patience-lxqt-settings (2016.1.0-1) unstable; urgency=medium
+
+  * mouse and qterminal fixed
+
+ -- Alf Gaida <agaida@siduction.org>  Mon, 19 Dec 2016 22:15:15 +0100
+
 patience-lxqt-settings (2016.1.0~alpha-1) unstable; urgency=medium
 
   * Initial Release.
