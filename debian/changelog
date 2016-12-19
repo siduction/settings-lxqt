@@ -1,3 +1,9 @@
+paintitblack-lxqt-settings (2016.12.19) unstable; urgency=medium
+
+  * mouse and qterminal
+
+ -- Alf Gaida <agaida@siduction.org>  Mon, 19 Dec 2016 22:13:31 +0100
+
 paintitblack-lxqt-settings (2016.08.03) unstable; urgency=medium
 
   * new bootstrap 
