@@ -1,3 +1,9 @@
+patience-lxqt-settings (2016.1.0-2) unstable; urgency=medium
+
+  * removed livesettings.postinst
+
+ -- Alf Gaida <agaida@siduction.org>  Sat, 28 Jan 2017 01:27:42 +0100
+
 patience-lxqt-settings (2016.1.0-1) unstable; urgency=medium
 
   * mouse and qterminal fixed
