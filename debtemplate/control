@@ -27,7 +27,6 @@ Description: @DISPLAY@ settings in installed mode
 Package: @CODENAME_SAFE@-@FLAVOUR@-livesettings
 Architecture: all
 Depends: ${misc:Depends},
-         sidu-installer (>= 2014.01.10),
          siduction-icons,
          xfwm4 | openbox | x-window-manager,
          @CODENAME_SAFE@-@FLAVOUR@-artwork,
