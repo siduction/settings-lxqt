@@ -27,7 +27,6 @@ Description: LXQt settings in installed mode
 Package: patience-lxqt-livesettings
 Architecture: all
 Depends: ${misc:Depends},
-         sidu-installer (>= 2014.01.10),
          siduction-icons,
          xfwm4 | openbox | x-window-manager,
          patience-lxqt-artwork,
