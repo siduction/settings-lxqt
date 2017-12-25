@@ -1,3 +1,9 @@
+patience-lxqt-settings (2017.2.0-1) unstable; urgency=medium
+
+  * fix behaviour and dependencies for a working autoremove
+
+ -- Alf Gaida <agaida@siduction.org>  Mon, 25 Dec 2017 15:03:40 +0100
+
 patience-lxqt-settings (2017.1.0-1) unstable; urgency=medium
 
   * release branding
