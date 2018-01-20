@@ -1,12 +1,18 @@
+patience-lxqt-settings (2018.1.0-3) unstable; urgency=medium
+
+  * refactored settings and live settings
+
+ -- Alf Gaida <agaida@siduction.org>  Sat, 20 Jan 2018 03:04:46 +0100
+
 patience-lxqt-settings (2018.1.0-2) unstable; urgency=medium
 
-  * fix grub defaults 
+  * fix grub defaults
 
- -- Alf Gaida <agaida@siduction.org>  Wed, 27 Dec 2017 01:47:37 +0100
+ -- Alf Gaida <agaida@siduction.org>  Sat, 20 Jan 2018 02:51:03 +0100
 
 patience-lxqt-settings (2018.1.0-1) unstable; urgency=medium
 
-  * Release 18.1 
+  * Release 18.1
 
  -- Alf Gaida <agaida@siduction.org>  Tue, 26 Dec 2017 22:59:31 +0100
 
@@ -24,7 +30,7 @@ patience-lxqt-settings (2017.1.0-1) unstable; urgency=medium
 
 patience-lxqt-settings (2016.1.0-3) unstable; urgency=medium
 
-  * removed sidu-installer dependency 
+  * removed sidu-installer dependency
 
  -- Alf Gaida <agaida@siduction.org>  Sun, 29 Jan 2017 13:47:12 +0100
 
