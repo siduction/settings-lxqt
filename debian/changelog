@@ -1,3 +1,9 @@
+paintitblack-lxqt-settings (2018.01.20) unstable; urgency=medium
+
+  * re-bootstrap paintitblack
+
+ -- Alf Gaida <agaida@siduction.org>  Sat, 20 Jan 2018 13:21:02 +0100
+
 paintitblack-lxqt-settings (2016.12.19) unstable; urgency=medium
 
   * mouse and qterminal
