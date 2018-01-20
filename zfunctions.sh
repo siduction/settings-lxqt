@@ -15,7 +15,7 @@ function source_version_info {
 function cleanup_old_builds {
     if [ -f ./debian/rules ]; then
         debclean -d
-        rm debian/rules
+        rm ./debian/rules
         echo "old builds cleaned up, run bootstrap again!"
         return 1
     fi
@@ -25,17 +25,17 @@ function cleanup_old_builds {
 # debian cleanup
 # ==============
 function debian_cleanup {
-    rm -vrf debian/siduction-live-settings-*-*
-    rm -vrf debian/siduction-settings-*-*
-    rm -vf debian/files
-    rm -vf debian/*.init
-    rm -vf debian/*.install
-    rm -vf debian/*.lintian-overrides
-    rm -vf debian/*.log
-    rm -vf debian/*.postinst
-    rm -vf debian/*.preinst
-    rm -vf debian/*.postrm
-    rm -vf debian/*.service
+    rm -vrf ./debian/siduction-live-settings-*-*
+    rm -vrf ./debian/siduction-settings-*-*
+    rm -vf ./debian/files
+    rm -vf ./debian/*.init
+    rm -vf ./debian/*.install
+    rm -vf ./debian/*.lintian-overrides
+    rm -vf ./debian/*.log
+    rm -vf ./debian/*.postinst
+    rm -vf ./debian/*.preinst
+    rm -vf ./debian/*.postrm
+    rm -vf ./debian/*.service
 }
 
 
@@ -44,7 +44,7 @@ function debian_cleanup {
 function debian_changelog {
     if [ ! -f debian/changelog ]; then
         sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
-            -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
+            -e "s/\@CODENAME\@/${CODENAME}/g" \
             -e "s/\@DISTRIBUTION\@/${DISTRIBUTION}/g" \
             -e "s/\@VERSION\@/${VERSION}/g" \
             ../template/debian/changelog \
@@ -57,7 +57,7 @@ function debian_changelog {
 # =============
 function basic_control {
     sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
-        -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
+        -e "s/\@CODENAME\@/${CODENAME}/g" \
         -e "s/\@DISTRIBUTION\@/${DISTRIBUTION}/g" \
         -e "s/\@VERSION\@/${VERSION}/g" \
         ../template/debian/control \
@@ -82,7 +82,7 @@ function grub_template {
 # ============
 function debian_rules {
     sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
-        -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
+        -e "s/\@CODENAME\@/${CODENAME}/g" \
         -e "s/\@DISTRIBUTION\@/${DISTRIBUTION}/g" \
         -e "s/\@VERSION\@/${VERSION}/g" \
         ../template/debian/rules \
@@ -99,4 +99,3 @@ function debian_foo_basics {
     cp -av ../template/debian/source/options ./debian/source/
     cp -av ../template/debian/compat ./debian/
 }
-

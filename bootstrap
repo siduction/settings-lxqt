@@ -15,37 +15,30 @@ debian_rules
 # debian
 
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
-    -e "s/\@FLAVOUR\@/${FLAVOUR}/g" \
     ../template/debian/copyright \
     > ./debian/copyright
 
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
-    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
     ../template/debian/${CODENAME_SAFE}-lxqt-settings.install \
     > ./debian/${CODENAME_SAFE}-lxqt-settings.install
 
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
-    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
     ../template/debian/${CODENAME_SAFE}-lxqt-settings.postinst \
     > ./debian/${CODENAME_SAFE}-lxqt-settings.postinst
 
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
-    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
     ../template/debian/${CODENAME_SAFE}-lxqt-livesettings.install \
     > ./debian/${CODENAME_SAFE}-lxqt-livesettings.install
 
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
-    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
     ../template/debian/${CODENAME_SAFE}-lxqt-livesettings.lintian-overrides \
     > ./debian/${CODENAME_SAFE}-lxqt-livesettings.lintian-overrides
 
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
-    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
     ../template/debian/${CODENAME_SAFE}-lxqt-livesettings.preinst \
     > ./debian/${CODENAME_SAFE}-lxqt-livesettings.preinst
 
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
-    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
     ../template/debian/${CODENAME_SAFE}-lxqt-livesettings.service \
     > ./debian/${CODENAME_SAFE}-lxqt-livesettings.service
 
@@ -57,12 +50,10 @@ cp -a ../template/etc .
 
 
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
-    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
     ../template/etc/xdg/pcmanfm-qt/lxqt/settings.conf \
     > ./etc/xdg/pcmanfm-qt/lxqt/settings.conf
 
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
-    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
     ../template/etc/xdg/lxqt/lxqt.conf \
     > ./etc/xdg/lxqt/lxqt.conf
 
