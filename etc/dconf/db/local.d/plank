@@ -2,7 +2,7 @@
 icon-size=32
 show-dock-item=false
 position='top'
-dock-items=['pcmanfm-qt.dockitem', 'qterminal.dockitem', 'juffed.dockitem', 'nomacs.dockitem', 'screengrab.dockitem', 'audacious.dockitem', 'smplayer.dockitem', 'siduction-irc.dockitem', 'trojita.dockitem', 'firefox.dockitem', 'zim.dockitem']
+dock-items=['pcmanfm-qt.dockitem', 'qterminal.dockitem', 'featherpad.dockitem', 'nomacs.dockitem', 'screengrab.dockitem', 'audacious.dockitem', 'smplayer.dockitem', 'siduction-irc.dockitem', 'firefox.dockitem', 'zim.dockitem']
 unhide-delay=0
 items-alignment='center'
 theme='Default'
