@@ -1,3 +1,9 @@
+patience-lxqt-settings (2018.2.0-2) unstable; urgency=medium
+
+  * pimp up gtk settings
+
+ -- Alf Gaida <agaida@siduction.org>  Mon, 05 Mar 2018 21:38:07 +0100
+
 patience-lxqt-settings (2018.2.0-1) unstable; urgency=medium
 
   * release 18.2
