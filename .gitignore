@@ -4,6 +4,7 @@
 
 # ignored debian $foo
 /debian/paintitblack-*/
+/debian/patience-*/
 
 /debian/files
 /debian/debhelper-build-stamp

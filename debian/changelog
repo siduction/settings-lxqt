@@ -1,3 +1,21 @@
+paintitblack-lxqt-settings (2018.4.0-3) unstable; urgency=medium
+
+  * sync with patience
+
+ -- Alf Gaida <agaida@siduction.org>  Sat, 30 Jun 2018 21:18:01 +0200
+
+paintitblack-lxqt-settings (2018.4.0-2) unstable; urgency=medium
+
+  * User papirus-icon-theme
+
+ -- Alf Gaida <agaida@siduction.org>  Sat, 26 May 2018 20:19:20 +0200
+
+paintitblack-lxqt-settings (2018.4.0-1) unstable; urgency=medium
+
+  * bootstrap for 2018.4.0
+
+ -- Alf Gaida <agaida@siduction.org>  Sat, 26 May 2018 15:29:45 +0200
+
 paintitblack-lxqt-settings (2018.01.20) unstable; urgency=medium
 
   * re-bootstrap paintitblack
@@ -12,7 +30,7 @@ paintitblack-lxqt-settings (2016.12.19) unstable; urgency=medium
 
 paintitblack-lxqt-settings (2016.08.03) unstable; urgency=medium
 
-  * new bootstrap 
+  * new bootstrap
 
  -- Alf Gaida <agaida@siduction.org>  Wed, 10 Aug 2016 20:07:27 +0200
 
@@ -46,7 +64,7 @@ paintitblack-lxqt-settings (2016.04.13) unstable; urgency=medium
 
 paintitblack-lxqt-settings (2016.04.11.2) unstable; urgency=medium
 
-  * add gitconfig and gitignore for dev purposes 
+  * add gitconfig and gitignore for dev purposes
 
  -- Alf Gaida <agaida@siduction.org>  Mon, 11 Apr 2016 18:43:27 +0200
 
@@ -91,14 +109,14 @@ paintitblack-lxqt-settings (2016.01.25) unstable; urgency=medium
 
 paintitblack-lxqt-settings (2016.01.24) unstable; urgency=medium
 
-  * some more refinements 
+  * some more refinements
   * new bootstrap for 2015
 
  -- Alf Gaida <agaida@siduction.org>  Sun, 24 Jan 2016 23:16:12 +0100
 
 paintitblack-lxqt-settings (2016.01.03) unstable; urgency=medium
 
-  * refine settings  
+  * refine settings
 
  -- Alf Gaida <agaida@siduction.org>  Mon, 04 Jan 2016 23:35:36 +0100
 
@@ -128,7 +146,7 @@ paintitblack-lxqt-settings (2015.08.15) unstable; urgency=medium
 
 paintitblack-lxqt-settings (2015.08.01) unstable; urgency=medium
 
-  * new package, reworked 
+  * new package, reworked
 
  -- Alf Gaida <agaida@siduction.org>  Sat, 08 Aug 2015 12:26:40 +0200
 
