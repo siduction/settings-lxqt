@@ -1,3 +1,9 @@
+patience-lxqt-settings (2018.3.0-2) unstable; urgency=medium
+
+  * depend on bitstream vera and papierus-icon-theme
+
+ -- Alf Gaida <agaida@siduction.org>  Sat, 30 Jun 2018 20:30:35 +0200
+
 patience-lxqt-settings (2018.3.0-1) unstable; urgency=medium
 
   * release 18.3

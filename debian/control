@@ -13,11 +13,13 @@ Homepage: https://git.siduction.org/extra/settings-lxqt
 Package: patience-lxqt-settings
 Architecture: all
 Depends: ${misc:Depends},
+         papirus-icon-theme,
          patience-lxqt-artwork,
          patience-sddm-settings
 	 | patience-lightdm-gtk-settings
 	 | patience-gdm3-settings,
-         patience-common-settings
+         patience-common-settings,
+         ttf-bitstream-vera
 Description: LXQt settings in installed mode
  Provides default settings for appearance and applications of the LXQt
  desktop.
