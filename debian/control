@@ -1,25 +1,23 @@
-Source: paintitblack-lxqt-settings
+Source: xperimental-lxqt-settings
 Section: misc
 Priority: optional
 Maintainer: Alf Gaida <agaida@siduction.org>
 Uploaders: Torsten Wohlfarth <towo@siduction.org>,
            Ovidiu Angelescu <convbsd@siduction.net>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.4
+Build-Depends: debhelper-compat (= 12)
+Standards-Version: 4.4.0
 Vcs-Browser: https://git.siduction.org/extra/settings-lxqt
 Vcs-Git: https://git.siduction.org/extra/settings-lxqt.git
 Homepage: https://git.siduction.org/extra/settings-lxqt
 
-Package: paintitblack-lxqt-settings
+Package: xperimental-lxqt-settings
 Architecture: all
 Depends: ${misc:Depends},
-         papirus-icon-theme,
-         paintitblack-lxqt-artwork,
-         paintitblack-sddm-settings
-	 | paintitblack-lightdm-gtk-settings
-	 | paintitblack-gdm3-settings,
-         paintitblack-common-settings,
-         ttf-bitstream-vera
+         xperimental-lxqt-artwork,
+         xperimental-sddm-settings
+	 | xperimental-lightdm-gtk-settings
+	 | xperimental-gdm3-settings,
+         xperimental-common-settings
 Description: LXQt settings in installed mode
  Provides default settings for appearance and applications of the LXQt
  desktop.
@@ -28,17 +26,17 @@ Description: LXQt settings in installed mode
  configurable by the local user and don't override already existing user
  profiles.
 
-Package: paintitblack-lxqt-livesettings
+Package: xperimental-lxqt-livesettings
 Architecture: all
 Depends: ${misc:Depends},
          siduction-icons,
          xfwm4 | openbox | x-window-manager,
-         paintitblack-lxqt-artwork,
-         paintitblack-lxqt-settings,
-         paintitblack-common-livesettings,
-         paintitblack-sddm-livesettings
-         | paintitblack-ligthdm-gtk-livesettings
-         | paintitblack-gdm3-livesettings
+         xperimental-lxqt-artwork,
+         xperimental-lxqt-settings,
+         xperimental-common-livesettings,
+         xperimental-sddm-livesettings
+         | xperimental-ligthdm-gtk-livesettings
+         | xperimental-gdm3-livesettings
 Description: LXQt settings in live mode
  Provides default settings for appearance and applications of the LXQt
  desktop in live mode.
