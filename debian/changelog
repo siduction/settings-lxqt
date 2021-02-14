@@ -1,3 +1,9 @@
+cblues-lxqt-settings (2021.1.0-4) unstable; urgency=medium
+
+  * package latest changes
+
+ -- Torsten Wohlfarth <towo@siduction.org>  Sun, 14 Feb 2021 10:55:40 +0100
+
 cblues-lxqt-settings (2021.1.0-3) unstable; urgency=medium
 
   * fix etc/xdg/pcmanfm-qt/lxqt/settings.conf
