@@ -1,4 +1,4 @@
-Source: cblues-lxqt-settings
+Source: farewell-lxqt-settings
 Section: misc
 Priority: optional
 Maintainer: Alf Gaida <agaida@siduction.org>
@@ -10,15 +10,15 @@ Vcs-Browser: https://git.siduction.org/extra/settings-lxqt
 Vcs-Git: https://git.siduction.org/extra/settings-lxqt.git
 Homepage: https://git.siduction.org/extra/settings-lxqt
 
-Package: cblues-lxqt-settings
+Package: farewell-lxqt-settings
 Architecture: all
 Depends: ${misc:Depends},
          papirus-icon-theme,
-         cblues-lxqt-artwork,
-         cblues-sddm-settings
-	 | cblues-lightdm-gtk-settings
-	 | cblues-gdm3-settings,
-         cblues-common-settings,
+         farewell-lxqt-artwork,
+         farewell-sddm-settings
+	 | farewell-lightdm-gtk-settings
+	 | farewell-gdm3-settings,
+         farewell-common-settings,
          ttf-bitstream-vera
 Description: LXQt settings in installed mode
  Provides default settings for appearance and applications of the LXQt
@@ -28,17 +28,17 @@ Description: LXQt settings in installed mode
  configurable by the local user and don't override already existing user
  profiles.
 
-Package: cblues-lxqt-livesettings
+Package: farewell-lxqt-livesettings
 Architecture: all
 Depends: ${misc:Depends},
          siduction-icons,
          xfwm4 | openbox | x-window-manager,
-         cblues-lxqt-artwork,
-         cblues-lxqt-settings,
-         cblues-common-livesettings,
-         cblues-sddm-livesettings
-         | cblues-ligthdm-gtk-livesettings
-         | cblues-gdm3-livesettings
+         farewell-lxqt-artwork,
+         farewell-lxqt-settings,
+         farewell-common-livesettings,
+         farewell-sddm-livesettings
+         | farewell-ligthdm-gtk-livesettings
+         | farewell-gdm3-livesettings
 Description: LXQt settings in live mode
  Provides default settings for appearance and applications of the LXQt
  desktop in live mode.
