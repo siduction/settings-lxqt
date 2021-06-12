@@ -20,8 +20,12 @@ fi
 
 FLL_LIVE_USER_HOME=$(getent passwd ${FLL_LIVE_USER} | cut -d \: -f 6)
 
-
-timedatectl set-timezone $(timedatectl | awk '/Local/{printf $6}')
+# timedatectl set-timezone $(timedatectl | awk '/Local/{printf $6}')
+if [ -f /etc/localtime ]; then
+rm -f /etc/localtime && ln -s /usr/share/zoneinfo/$(timedatectl | awk '/Time/{printf $3}') /etc/localtime;
+else
+ln -s /usr/share/zoneinfo/$(timedatectl | awk '/Time/{printf $3}') /etc/localtime;
+fi
 
 ###
 # cheatcode handling
