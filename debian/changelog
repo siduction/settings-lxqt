@@ -1,3 +1,9 @@
+farewell-lxqt-settings (2021.2.0-2) unstable; urgency=medium
+
+  * set mime for pdf to qpdfview
+
+ -- Torsten Wohlfarth <towo@siduction.org>  Mon, 26 Jul 2021 21:05:21 +0200
+
 farewell-lxqt-settings (2021.2.0-1) unstable; urgency=medium
 
   * set final version
