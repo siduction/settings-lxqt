@@ -1,3 +1,9 @@
+farewell-lxqt-settings (2021.2.0-3) unstable; urgency=medium
+
+  * fix wallpaper settings for desktop
+
+ -- Torsten Wohlfarth <towo@siduction.org>  Tue, 27 Jul 2021 21:42:19 +0200
+
 farewell-lxqt-settings (2021.2.0-2) unstable; urgency=medium
 
   * set mime for pdf to qpdfview
