@@ -1,4 +1,4 @@
-Source: farewell-lxqt-settings
+Source: 2021-03-lxqt-settings
 Section: misc
 Priority: optional
 Maintainer: Alf Gaida <agaida@siduction.org>
@@ -10,15 +10,15 @@ Vcs-Browser: https://git.siduction.org/extra/settings-lxqt
 Vcs-Git: https://git.siduction.org/extra/settings-lxqt.git
 Homepage: https://git.siduction.org/extra/settings-lxqt
 
-Package: farewell-lxqt-settings
+Package: 2021-03-lxqt-settings
 Architecture: all
 Depends: ${misc:Depends},
          papirus-icon-theme,
-         farewell-lxqt-artwork,
-         farewell-sddm-settings
-	 | farewell-lightdm-gtk-settings
-	 | farewell-gdm3-settings,
-         farewell-common-settings,
+         2021-03-lxqt-artwork,
+         2021-03-sddm-settings
+	 | 2021-03-lightdm-gtk-settings
+	 | 2021-03-gdm3-settings,
+         2021-03-common-settings,
          ttf-bitstream-vera
 Description: LXQt settings in installed mode
  Provides default settings for appearance and applications of the LXQt
@@ -28,17 +28,17 @@ Description: LXQt settings in installed mode
  configurable by the local user and don't override already existing user
  profiles.
 
-Package: farewell-lxqt-livesettings
+Package: 2021-03-lxqt-livesettings
 Architecture: all
 Depends: ${misc:Depends},
          siduction-icons,
          xfwm4 | openbox | x-window-manager,
-         farewell-lxqt-artwork,
-         farewell-lxqt-settings,
-         farewell-common-livesettings,
-         farewell-sddm-livesettings
-         | farewell-ligthdm-gtk-livesettings
-         | farewell-gdm3-livesettings
+         2021-03-lxqt-artwork,
+         2021-03-lxqt-settings,
+         2021-03-common-livesettings,
+         2021-03-sddm-livesettings
+         | 2021-03-ligthdm-gtk-livesettings
+         | 2021-03-gdm3-livesettings
 Description: LXQt settings in live mode
  Provides default settings for appearance and applications of the LXQt
  desktop in live mode.
