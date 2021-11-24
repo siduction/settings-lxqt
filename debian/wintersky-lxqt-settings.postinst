@@ -15,6 +15,10 @@ case "$1" in
         cp -af /usr/share/wintersky-lxqt-settings/etc/default        /etc
         ## gtk-2.0 ##
         cp -af /usr/share/wintersky-lxqt-settings/etc/gtk-2.0        /etc
+        ## NetworkManager ##
+        cp -af /usr/share/wintersky-xorg-settings/etc/NetworkManager           /etc
+        ## iwd ##
+        cp -af /usr/share/wintersky-xorg-settings/etc/iwd                      /etc
         ## skel ##
         cp -af /usr/share/wintersky-lxqt-settings/etc/skel/config    /etc/skel/.config
         cp -af /usr/share/wintersky-lxqt-settings/etc/skel/dmrc      /etc/skel/.dmrc
