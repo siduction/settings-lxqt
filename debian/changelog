@@ -1,3 +1,9 @@
+wintersky-lxqt-settings (2021.2.99-1) unstable; urgency=medium
+
+  * prepare wintersky release
+
+ -- Torsten Wohlfarth <towo@siduction.org>  Fri, 03 Dec 2021 19:50:01 +0100
+
 farewell-lxqt-settings (2021.2.0-3) unstable; urgency=medium
 
   * fix wallpaper settings for desktop

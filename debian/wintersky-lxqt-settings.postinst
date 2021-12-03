@@ -11,8 +11,6 @@ case "$1" in
     configure)
         ## dconf ##
         cp -af /usr/share/wintersky-lxqt-settings/etc/dconf          /etc
-        ## grub ##
-        cp -af /usr/share/wintersky-lxqt-settings/etc/default        /etc
         ## gtk-2.0 ##
         cp -af /usr/share/wintersky-lxqt-settings/etc/gtk-2.0        /etc
         ## NetworkManager ##
