@@ -1,3 +1,9 @@
+wintersky-lxqt-settings (2021.2.99-2) unstable; urgency=medium
+
+  * fix wintersky-lxqt-settings.postinst
+
+ -- Torsten Wohlfarth <towo@siduction.org>  Sun, 05 Dec 2021 14:10:26 +0100
+
 wintersky-lxqt-settings (2021.2.99-1) unstable; urgency=medium
 
   * prepare wintersky release
