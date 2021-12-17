@@ -1,3 +1,9 @@
+wintersky-lxqt-settings (2021.2.99-5) unstable; urgency=medium
+
+  * set executable bit to lxqt-cheatcodes
+
+ -- Torsten Wohlfarth <towo@siduction.org>  Fri, 17 Dec 2021 14:27:37 +0100
+
 wintersky-lxqt-settings (2021.2.99-4) unstable; urgency=medium
 
   * remove plank
