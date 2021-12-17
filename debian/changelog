@@ -1,3 +1,16 @@
+wintersky-lxqt-settings (2021.2.99-4) unstable; urgency=medium
+
+  * remove plank
+  * add livesettings.postinst for iwd, removed from settings.postinst
+
+ -- Torsten Wohlfarth <towo@siduction.org>  Fri, 17 Dec 2021 13:25:16 +0100
+
+wintersky-lxqt-settings (2021.2.99-3) unstable; urgency=medium
+
+  * fix scaling for wallpaper
+
+ -- Torsten Wohlfarth <towo@siduction.org>  Thu, 16 Dec 2021 22:12:56 +0100
+
 wintersky-lxqt-settings (2021.2.99-2) unstable; urgency=medium
 
   * fix wintersky-lxqt-settings.postinst
