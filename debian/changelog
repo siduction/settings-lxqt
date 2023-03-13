@@ -1,3 +1,9 @@
+mow-lxqt-settings (2022.1.1-1) unstable; urgency=medium
+
+  * remove timedatectl hack
+
+ -- Torsten Wohlfarth <towo@siduction.org>  Mon, 13 Mar 2023 21:51:32 +0100
+
 mow-lxqt-settings (2022.1.0-1) unstable; urgency=medium
 
   * prepare Masters of War release
