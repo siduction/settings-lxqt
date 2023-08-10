@@ -1,0 +1,11 @@
+[Unit]
+Description=LXQt cheatcodes in live media
+ConditionPathExists=/usr/share/giants-lxqt-livesettings/
+After=giants-common-livesettings.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/share/giants-lxqt-livesettings/lxqt-cheatcodes start
+
+[Install]
+WantedBy=graphical.target

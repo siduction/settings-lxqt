@@ -1,3 +1,9 @@
+giants-lxqt-settings (2023.1-1) unstable; urgency=medium
+
+  * prepare release
+
+ -- Torsten Wohlfarth <towo@siduction.org>  Thu, 10 Aug 2023 22:19:25 +0200
+
 wintersky-lxqt-settings (2021.2.99-5) unstable; urgency=medium
 
   * set executable bit to lxqt-cheatcodes

@@ -1,4 +1,4 @@
-Source: wintersky-lxqt-settings
+Source: giants-lxqt-settings
 Section: misc
 Priority: optional
 Maintainer: Alf Gaida <agaida@siduction.org>
@@ -10,15 +10,15 @@ Vcs-Browser: https://git.siduction.org/extra/settings-lxqt
 Vcs-Git: https://git.siduction.org/extra/settings-lxqt.git
 Homepage: https://git.siduction.org/extra/settings-lxqt
 
-Package: wintersky-lxqt-settings
+Package: giants-lxqt-settings
 Architecture: all
 Depends: ${misc:Depends},
          papirus-icon-theme,
-         wintersky-lxqt-artwork,
-         wintersky-sddm-settings
-	 | wintersky-lightdm-gtk-settings
-	 | wintersky-gdm3-settings,
-         wintersky-common-settings,
+         giants-lxqt-artwork,
+         giants-sddm-settings
+	 | giants-lightdm-gtk-settings
+	 | giants-gdm3-settings,
+         giants-common-settings,
          ttf-bitstream-vera
 Description: LXQt settings in installed mode
  Provides default settings for appearance and applications of the LXQt
@@ -28,17 +28,17 @@ Description: LXQt settings in installed mode
  configurable by the local user and don't override already existing user
  profiles.
 
-Package: wintersky-lxqt-livesettings
+Package: giants-lxqt-livesettings
 Architecture: all
 Depends: ${misc:Depends},
          siduction-icons,
          xfwm4 | openbox | x-window-manager,
-         wintersky-lxqt-artwork,
-         wintersky-lxqt-settings,
-         wintersky-common-livesettings,
-         wintersky-sddm-livesettings
-         | wintersky-ligthdm-gtk-livesettings
-         | wintersky-gdm3-livesettings
+         giants-lxqt-artwork,
+         giants-lxqt-settings,
+         giants-common-livesettings,
+         giants-sddm-livesettings
+         | giants-ligthdm-gtk-livesettings
+         | giants-gdm3-livesettings
 Description: LXQt settings in live mode
  Provides default settings for appearance and applications of the LXQt
  desktop in live mode.
