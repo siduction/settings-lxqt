@@ -1,4 +1,4 @@
-Source: giants-lxqt-settings
+Source: shine-on-lxqt-settings
 Section: misc
 Priority: optional
 Maintainer: Alf Gaida <agaida@siduction.org>
@@ -10,15 +10,15 @@ Vcs-Browser: https://git.siduction.org/extra/settings-lxqt
 Vcs-Git: https://git.siduction.org/extra/settings-lxqt.git
 Homepage: https://git.siduction.org/extra/settings-lxqt
 
-Package: giants-lxqt-settings
+Package: shine-on-lxqt-settings
 Architecture: all
 Depends: ${misc:Depends},
          papirus-icon-theme,
-         giants-lxqt-artwork,
-         giants-sddm-settings
-	 | giants-lightdm-gtk-settings
-	 | giants-gdm3-settings,
-         giants-common-settings,
+         shine-on-lxqt-artwork,
+         shine-on-sddm-settings
+	 | shine-on-lightdm-gtk-settings
+	 | shine-on-gdm3-settings,
+         shine-on-common-settings,
          ttf-bitstream-vera
 Description: LXQt settings in installed mode
  Provides default settings for appearance and applications of the LXQt
@@ -28,17 +28,17 @@ Description: LXQt settings in installed mode
  configurable by the local user and don't override already existing user
  profiles.
 
-Package: giants-lxqt-livesettings
+Package: shine-on-lxqt-livesettings
 Architecture: all
 Depends: ${misc:Depends},
          siduction-icons,
          xfwm4 | openbox | x-window-manager,
-         giants-lxqt-artwork,
-         giants-lxqt-settings,
-         giants-common-livesettings,
-         giants-sddm-livesettings
-         | giants-ligthdm-gtk-livesettings
-         | giants-gdm3-livesettings
+         shine-on-lxqt-artwork,
+         shine-on-lxqt-settings,
+         shine-on-common-livesettings,
+         shine-on-sddm-livesettings
+         | shine-on-ligthdm-gtk-livesettings
+         | shine-on-gdm3-livesettings
 Description: LXQt settings in live mode
  Provides default settings for appearance and applications of the LXQt
  desktop in live mode.
