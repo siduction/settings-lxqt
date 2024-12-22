@@ -1,3 +1,9 @@
+shine-on-lxqt-settings (2024.1-2) unstable; urgency=medium
+
+  * remove Metadata.desktop from autostart, it does not work
+
+ -- Torsten Wohlfarth <towo@siduction.org>  Sun, 22 Dec 2024 23:04:43 +0100
+
 shine-on-lxqt-settings (2024.1-1) unstable; urgency=medium
 
   * prepare 2024.1 release
