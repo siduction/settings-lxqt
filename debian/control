@@ -1,4 +1,4 @@
-Source: shine-on-lxqt-settings
+Source: big-crime-lxqt-settings
 Section: misc
 Priority: optional
 Maintainer: Alf Gaida <agaida@siduction.org>
@@ -10,15 +10,15 @@ Vcs-Browser: https://git.siduction.org/extra/settings-lxqt
 Vcs-Git: https://git.siduction.org/extra/settings-lxqt.git
 Homepage: https://git.siduction.org/extra/settings-lxqt
 
-Package: shine-on-lxqt-settings
+Package: big-crime-lxqt-settings
 Architecture: all
 Depends: ${misc:Depends},
          papirus-icon-theme,
-         shine-on-lxqt-artwork,
-         shine-on-sddm-settings
-	 | shine-on-lightdm-gtk-settings
-	 | shine-on-gdm3-settings,
-         shine-on-common-settings,
+         big-crime-lxqt-artwork,
+         big-crime-sddm-settings
+	 | big-crime-lightdm-gtk-settings
+	 | big-crime-gdm3-settings,
+         big-crime-common-settings,
          ttf-bitstream-vera
 Description: LXQt settings in installed mode
  Provides default settings for appearance and applications of the LXQt
@@ -28,17 +28,17 @@ Description: LXQt settings in installed mode
  configurable by the local user and don't override already existing user
  profiles.
 
-Package: shine-on-lxqt-livesettings
+Package: big-crime-lxqt-livesettings
 Architecture: all
 Depends: ${misc:Depends},
          siduction-icons,
          xfwm4 | openbox | x-window-manager,
-         shine-on-lxqt-artwork,
-         shine-on-lxqt-settings,
-         shine-on-common-livesettings,
-         shine-on-sddm-livesettings
-         | shine-on-ligthdm-gtk-livesettings
-         | shine-on-gdm3-livesettings
+         big-crime-lxqt-artwork,
+         big-crime-lxqt-settings,
+         big-crime-common-livesettings,
+         big-crime-sddm-livesettings
+         | big-crime-ligthdm-gtk-livesettings
+         | big-crime-gdm3-livesettings
 Description: LXQt settings in live mode
  Provides default settings for appearance and applications of the LXQt
  desktop in live mode.
