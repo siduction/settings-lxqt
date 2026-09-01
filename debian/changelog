@@ -1,3 +1,10 @@
+big-crime-lxqt-settings (2026.1-2) unstable; urgency=medium
+
+    [ hhl ]
+  * Change wallpaper to big-crime_dark.png, commented iwd cheatcodes, we don't need them
+
+ -- Torsten Wohlfarth <towo@siduction.org>  Tue, 01 Sep 2026 11:03:11 +0200
+
 big-crime-lxqt-settings (2026.1-1) unstable; urgency=medium
 
   * New release.
